@@ -29,4 +29,3 @@ def write_stock_file(file):
         out_file.write(symbols[i] + ' ' + companies[i] + '\n')
     out_file.close()
 
-write_stock_file("stocklist.txt")

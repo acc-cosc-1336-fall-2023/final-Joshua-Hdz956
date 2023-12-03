@@ -1,3 +1,7 @@
+bold = '\033[1m'
+underline = '\033[4m'
+normal = "\033[0;0m"
+
 class Stock():
     __symbol = None
     __company_name = None
@@ -24,8 +28,8 @@ def stock_purchase_history():
                         stock4.get_symbol():stock4.get_company_name(),
                         stock5.get_symbol():stock5.get_company_name()}
     
-    print("\nStock Purchase History")
-    print("Symbol\tCompany Name")
+    print(bold+"\nStock Purchase History")
+    print(underline+"Symbol\tCompany Name"+normal)
     for symbol, company in stock_dictionary.items():
         print(symbol.ljust(7), company)
     print("")
