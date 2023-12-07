@@ -7,13 +7,13 @@ option = str(input("Enter Y to create a string and substring: ")).lower()
 while True:
     if option in ('y', 'yes'):
         while True:
-            string1 = str(input("Enter your string (8-16 characters): "))
+            string1 = str(input("Enter your string (8-16 characters): ")).upper()
             if question_d.validate_string_length(string1) == "Invalid":
                 print("String not within 8-16 characters")
             else:
                 break
         while True:
-            string2 = str(input("Enter your substring (4 characters): "))
+            string2 = str(input("Enter your substring (4 characters): ")).upper()
             if question_d.validate_substring_length(string2) == "Invalid":
                 print("Substring not 4 characters")
             else:
